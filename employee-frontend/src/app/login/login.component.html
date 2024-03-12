@@ -1,0 +1,34 @@
+
+<div style="width: 100%; height:90vh; " class="d-flex justify-content-center align-items-center">
+
+        <div class="row">
+
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-8 w-100">
+
+                <h1 class="align-items-center text-center">Login</h1>
+
+                <div class="shadow p-5 rounded bg-info">
+
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" [(ngModel)]="email" name="email" class="form-control" id="floatingInput" placeholder="UserName">
+                            <label for="floatingInput">Email</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input type="password" [(ngModel)]="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                          </div>
+
+                          <div class="text-center">
+                            <input type="button" (click)="login()"  value="Login" class="btn btn-warning text-dark fw-bolder">
+                          </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+
+        </div>
+
+</div>

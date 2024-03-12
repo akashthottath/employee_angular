@@ -1,0 +1,72 @@
+<div class="d-flex border border-light">
+  <!-- side bar -->
+  <div
+    style="width: 200px; height: 90vh"
+    class="sidebar bg-info p-3 d-flex flex-column"
+  >
+    <a routerLink="home">Home</a>
+
+    <a routerLink="/users">Users</a>
+  </div>
+
+  <!-- dashboard -->
+  <div class="dashboard p-3 w-100">
+    <div class="row">
+      <div class="col-lg-8">
+        <div
+          style="
+            height: 150px;
+            background-image: url('https://t4.ftcdn.net/jpg/01/97/92/77/360_F_197927767_MISwwnukYrfEH7BoyWazNXLS2p32Plcb.jpg');
+            background-size: cover;
+          "
+          class="admin-panel border rounded"
+        >
+          <h1 class="text-light text-center fw-bold py-5 fst-italic">
+            Employee Portal
+          </h1>
+        </div>
+        <div class="row mt-2">
+          <!-- inline Calender -->
+          <div styl
+          e="height: 400px" class="col-lg-6 border rounded">
+            <app-calender></app-calender>
+          </div>
+          <!-- wheather/quoates -->
+          <div style="height: 150px" class="col-lg-6 border rounded">
+            quoates
+          </div>
+        </div>
+
+        <div style="height: 250px" class="row mt-2 border rounded">
+          <app-graph></app-graph>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <!-- admindetails -->
+        <div style="height: 300px" class="admin-details border rounded p-2">
+          <!-- input boxes -->
+          <form class="example-form">
+            <!-- input box 1 -->
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Enter UserName" />
+            </mat-form-field>
+
+            <!-- input box 2  -->
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Enter User Password" />
+            </mat-form-field>
+
+            <button mat-raised-button class="mt-3" color="primary">
+              Login
+            </button>
+          </form>
+        </div>
+        <!-- random user -->
+        <div style="height: 200px" class="random-user border rounded mt-2 p-2">
+          random-user
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
